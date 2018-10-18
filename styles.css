@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+  color: #555;
+  margin: 0;
+
+  font-family: 'Montserrat',sans-serif;
+}
+
+#header {
+  background: #1abc9c;
+  height: 150px;
+  line-height: 150px;
+  /* line-height 用法还需要研究一下，主要是用在框里面字体的行间距 */
+}
+#header a {
+  color: white;
+  text-decoration: none;
+  /* text-decoration is the var to put up/down decoration. */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  /* letter-spacing is var to make some more space between letters.  */
+}
+
+#header a:hover {
+  color: #222;
+}
+/* float 是靠左靠右 */
+#header-title {
+  display: block;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#header-nav {
+  display: block;
+  float: right;
+  margin-top: 0;
+}
+
+#header-nav li {
+  display: inline;
+  padding-left: 20px;
+}
+
+/* container is a global CSS */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.post-container:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.post-autor img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.post-autor span {
+  margin-left: 16px;
+}
+.post-date {
+  color: #d2d2d2;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+h1, h2, h3, h4 {
+  color: #333;
+}
+
+p {
+  line-height: 1.5;
+}
+/* cotarner CSS */
+.post, .about{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.about-autor img{
+  width: 250px;
+  height: 250px;
+  vertical-align: middle;
+}
+/* footer CSS */
+#footer {
+  background-color: #2f2f2f;
+  padding: 50px 0;
+}
+
+.column {
+  min-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ #footer h4 {
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+ }
+#footer p {
+  color:white;
+}
+
+ a {
+   color: #1abc9c;
+   /* 去除下划线 */
+   text-decoration: none;
+ }
+
+ a:hover {
+   color: #f6a623;
+ }
